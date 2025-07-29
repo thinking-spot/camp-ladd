@@ -290,34 +290,5 @@
         </footer>
     </div>
 
-    <script>
-        // Placeholder for Stripe Payment Link integration
-        // Replace the # in href attributes with your actual Stripe Payment Links once available
-        
-        document.querySelectorAll('.donation-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const amount = this.getAttribute('data-amount');
-                
-                if (amount === 'custom') {
-                    // For custom amounts, you have a few options:
-                    // 1. Link to a Stripe Payment Link with adjustable amount
-                    // 2. Implement Stripe Checkout for true custom amounts
-                    // 3. Create a simple form to collect the amount
-                    alert('Custom donation amounts will be available soon! You can also contact us directly to make a custom donation.');
-                } else {
-                    // For now, show an alert. Replace this with actual Stripe Payment Link
-                    alert(`Thank you for your interest in donating ${amount}! Payment links will be available soon.`);
-                }
-                
-                // When you have your Stripe Payment Links, replace the href="#" with:
-                // $100:  https://buy.stripe.com/your-100-link
-                // $250:  https://buy.stripe.com/your-250-link
-                // $500:  https://buy.stripe.com/your-500-link
-                // $1000: https://buy.stripe.com/your-1000-link
-                // Custom: https://buy.stripe.com/your-custom-link (or implement Stripe Checkout)
-            });
-        });
-    </script>
 </body>
 </html>
